@@ -14,7 +14,7 @@ class NotesApp extends StatelessWidget {
     return MaterialApp(
       //Changing the app to dark mode
       theme: ThemeData(brightness: Brightness.dark),
-      home: HomeView(),
+      home: const HomeView(),
     );
   }
 }

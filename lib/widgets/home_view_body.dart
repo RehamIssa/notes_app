@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import 'package:notes_app/widgets/custom_app_bar.dart';
+
+class HomeViewBody extends StatelessWidget {
+  const HomeViewBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: const Column(
+        children: [
+          SizedBox(
+            height: 12,
+          ),
+          CustomAppBar(),
+        ],
+      ),
+    );
+  }
+}
