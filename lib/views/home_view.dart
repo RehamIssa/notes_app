@@ -15,9 +15,13 @@ class HomeView extends StatelessWidget {
           foregroundColor: Colors.black,
           onPressed: () {
             showModalBottomSheet(
+              //too change the border radius of the bottom sheet
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
               context: context,
               builder: (context) {
-                return AddNoteBottomSheet();
+                return const AddNoteBottomSheet();
               },
             );
           },
