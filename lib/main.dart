@@ -4,7 +4,7 @@ import 'package:notes_app/constants.dart';
 import 'package:notes_app/views/home_view.dart';
 
 void main() async {
-  await Hive.initFlutter();
+ await Hive.initFlutter(); //focus on using initFlutter b/c we are working with flutter
  await Hive.openBox(kNotesBox); //the box is something like a collection to save the data in it
   runApp(const NotesApp());
 }
