@@ -14,6 +14,8 @@ class CustomTextField extends StatelessWidget {
       validator: (value) {
         if (value?.isEmpty ?? true) {
           return 'Field is required';
+        } else {
+          return null;
         }
       },
       cursorColor: kPrimaryColor,
