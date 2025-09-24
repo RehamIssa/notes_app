@@ -15,6 +15,8 @@ class HomeView extends StatelessWidget {
           foregroundColor: Colors.black,
           onPressed: () {
             showModalBottomSheet(
+              //to let the bottom sheet go above once click to write something
+              isScrollControlled: true,
               //too change the border radius of the bottom sheet
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
